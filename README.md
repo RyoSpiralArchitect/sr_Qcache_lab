@@ -1,4 +1,4 @@
-# SR QCache Lab🌀
+# SpiralRealities' QCache Lab🌀
 
 **QCache Lab** is an experimental framework for **Query Cache attention mechanism intervention** using HuggingFace Transformers.
 
