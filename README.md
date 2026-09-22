@@ -1,4 +1,4 @@
-# QCache Lab
+# SR QCache Lab🌀
 
 **QCache Lab** is an experimental framework for **Query Cache attention mechanism intervention** using HuggingFace Transformers.
 
@@ -241,7 +241,7 @@ python3 sr_qcache_lab_v14.py run \
 
 ---
 
-### 5. `legacy-run` — Fixed Token Comparison (V0.1.2)
+### 5. `legacy-run` — Fixed Token Comparison
 
 ```bash
 python3 sr_qcache_lab_v14.py legacy-run \
@@ -310,18 +310,6 @@ Parallel Mode (lambda > 0):
 - **Append-only**: New KV pairs are added, never replaced or evicted
 - **Current Q excluded**: Current query is excluded from history mean calculation
 - **Fresh state per trial**: Each experiment has independent KV and Q bank state
-
----
-
-## Live Verification Status (2026-09-23)
-
-| Command | Status | Details |
-|---|---|---|
-| `device-check` | PASS | CPU/MPS environment normal |
-| `self-test` | 78/78 PASS | All PyTorch + toy tests passed |
-| `hf-smoke` | PARTIAL | Llama/Mistral/Qwen2/Qwen3/Phi3/Olmo2/Mixtral PASS, Gemma2 FAIL |
-
-> Gemma2 failure: `RuntimeError('Expected all tensors to be on the same device...')` - Environment-specific device placement issue (Spiralton + MPS)
 
 ---
 
